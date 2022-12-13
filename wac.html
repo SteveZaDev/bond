@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wac</title>
+  <link rel="stylesheet" href="./wac.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="./pics/logo.png" alt="" width="75"></a>
+    </div>
+  </header>
+
+  <section id="display">
+   <section id="game-area">
+      <h1>Wac-a-Villian</h1>
+      <h3>Time left is <span id="timer">10</span></h3>
+      <article id="game-display">
+        <div class="grid">
+          <div class="square" id="1"></div>
+          <div class="square" id="2"></div>
+          <div class="square" id="3"></div>
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+        </div>
+      </article>
+      <article id="results-display">
+  
+      </article>
+      <button id="start" disabled onclick="startGame()">Start Game</button>
+    </section>
+  
+    <aside id="options">
+     <!-- <div id="weapon"> 
+        <p>Choose your weapon..</p>
+        <div id="weapon-tray">
+
+        </div>
+  
+      </div>-->
+      <div id="villian">
+        <p id="chosen-villian">Select your villian..</p>
+        <div id="villian-tray">
+
+        </div>
+  
+      </div>
+      <div id="level">
+        <p id="chosen-difficulty">Choose your level..</p>
+        <div id="difficulty-tray">
+          <button onclick="jethro()">Jethro</button>
+          <button onclick="jessica()">Jessica</button>
+          <button onclick="james()">James</button>
+        </div>
+        
+      </div>
+      
+    </aside>
+  </section>
+
+<!-- Copied the following to create a modal popup at end of game -->
+<!-- Modal popup box -->
+<div id="mpopupBox" class="mpopup">
+  <!-- Modal content -->
+  <div class="modal-content">
+      <div class="modal-header">
+          <span class="close">×</span>
+          <h2>YOUR SCORE</h2>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+  </div>
+</div>
+<!-- end of Copied modal popup at end of game -->
+
+
+
+  <script src="./wac.js"></script>
+</body>
+</html>

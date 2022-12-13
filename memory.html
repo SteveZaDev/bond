@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./memory.css">
+  <title>Match</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="./pics/logo.png" alt="" width="75"></a>
+    </div>
+  </header>  
+  <div id="outer-container">
+    <div class="container">
+      <h1>Memory</h1>
+    
+      <h3>Score <span id="result"></span></h3>
+    
+      <div id="grid">
+        
+      </div>
+      <h3>Choose number of villians to uncover</h3>
+      <btn-grp>
+        <button onclick="sixVillians()">6</button>
+        <button onclick="nineVillians()">9</button>
+        <button onclick="twelveVillians()">12</button>
+        <button onclick="fifteenVillians()">15</button>
+      </btn-grp>
+      <div class="captured">
+        <ol id="captured-villians">
+        </ol>
+      </div>
+    </div>
+  
+  </div>
+
+   
+<!-- <video autoplay loop id="myVideo">
+  <source src="drno.mp4" type="video/mp4">
+</video> -->
+
+  <script src="./memory.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+/* VARIABLES */
+:root {
+  --maroon-red: #800000;
+  --light-red: #ff0000;
+  --crimson-red: #66434655;
+  --coolors1: #f7b53855;
+  --coolors2: #f7b538aa;
+}
+
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  color: white;
+}
+
+body{
+  background-image: url(./pics/Mahogony.jpg);
+}
+
+/* DISPLAY IS ALL OF SCREEN EXCEPT FOR HEADER */
+#display{
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+/*  border: 2px solid salmon; */
+  margin: 10px;
+  justify-content: center;
+}
+
+.logo{
+  position: fixed;
+  top: 10px; 
+}
+
+/* Game-area includes the title (h1) the game display and the counter tray */
+#game-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--coolors1);
+  width: 70%;
+  max-width: 600px;
+  height: 90%;
+  align-items: center;
+  margin-right: 2rem;
+  color: white;
+  /* Created with https://www.css-gradient.com */
+  background-color: rgba(100, 25, 200, .2);
+  background-color:var(--coolors2);
+}
+
+h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#game-display{
+  width: 100%;
+  height: 100%;
+  border-width: 2px;
+  border-style: outset; 
+  Border-color: gold;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#results-display{
+  width: 100%;
+  height: 25%;
+  border: 2px solid yellow;
+}
+
+#options{
+  width: 29%;
+  border: 3px solid var(--coolors1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+
+/* weapon includes 'choose your weapon' and the tray */
+#weapon{
+  width: 100%;
+  height: 20%;
+  border: 4px pink solid;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#weapon-tray{
+  width: 100%;
+  height: 86%;
+  border-width: 10px;
+  border-style: outset; 
+  Border-color: #CC63FF;
+  background-color: pink;
+}
+
+
+#villian{
+  width: 100%;
+  height: 75%;
+  border: 4px var(--coolors2) solid;
+  text-align: center;
+}
+
+#villian-tray{
+  width: 100%;
+  height: 86%;
+  border-width: 10px;
+  border-style: outset; 
+  Border-color: #4e4303;
+  background-color: grey;
+  background-color: var(--coolors1);
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns:  repeat(3, 1fr);
+}
+
+.vil{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  margin-top: 2px;
+  border-style: outset; 
+  Border-color: #5a565e;
+}
+
+.vil:hover{
+  transform: scale(1.75)
+}
+
+
+#level{
+  width: 100%;
+  height: 15%;
+  border: 2px var(--coolors1) solid;
+}
+
+#difficulty-tray{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#chosen-difficulty{
+  font-size: .9rem;
+  margin-bottom: .5rem;
+}
+
+
+#start:disabled{
+  display: none;
+
+}
+
+.grid{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* Created with https://www.css-gradient.com */
+background-image: url(./pics/Mahogony.jpg);
+opacity: .90;
+}
+
+.square{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 33%;
+  width: 33%;
+  border: 1px solid #00000044;
+
+}
+
+
+.mole{
+  background-size: cover;
+}
+
+
+
+
+
+
+
+/* =====================
+   3D BUTTON 1
+   ===================== */
+
+   button {
+    position: relative;
+    background: gold;
+    background: var(--coolors2);
+    border: none;
+    color: black;
+    padding: 2px 4px;
+    font-size: .9rem;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    outline: none;
+  }
+  
+    button:hover {
+      background: hsl(16, 100%, 45%);
+    }
+  
+    .final__btn-3d-1:active {
+      background: hsl(16, 100%, 40%);
+      top: 3px;
+      left: -3px;
+      box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+    }
+  
+    button::before {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 0;
+      width: 0;
+      /* border width needs to be size of the element's box shadow */
+      border: solid 6px transparent;
+  
+      /* border width needs to be size of the element's box shadow */
+      border-right: solid 6px hsl(16, 100%, 30%);
+  
+      /* no width for left, makes measurements easier */
+      border-left-width: 0px;
+  
+      background: none;
+      top: 0px;
+  
+      /* needs to be the same size as border width */
+      left: -6px;
+    }
+  
+    .final__btn-3d-1::after {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 0;
+      width: 0;
+      border: solid 6px transparent;
+      border-top: solid 6px hsl(16, 100%, 30%);
+      border-bottom-width: 0px;
+      background: none;
+      right: 0;
+      bottom: -6px;
+    }
+  
+      .final__btn-3d-1:active::before {
+        border: solid 3px transparent;
+        border-right: solid 3px hsl(16, 100%, 30%);
+        border-left-width: 0px;
+        left: -3px;
+      }
+  
+      .final__btn-3d-1:active::after {
+        border: solid 3px transparent;
+        border-top: solid 3px hsl(16, 100%, 30%);
+        border-bottom-width: 0px;
+        bottom: -3px;
+      }
+
+   
+     /* MODAL POPUP CSS  */
+      .mpopup {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fff;
+        margin: auto;
+        padding: 0;
+        width: 85%;
+        max-width: 450px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        border-radius: 0.3rem;
+    }
+    .modal-header {
+        padding: 2px 12px;
+        background-color: gold;
+        color: #333;
+        border-bottom: 1px solid #e9ecef;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+    }
+    .modal-header h2{
+        font-size: 1.25rem;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    .modal-body {
+        padding: 2px 12px;
+        color: black;
+    }
+    .modal-footer {
+        padding: 1rem;
+        background-color: #ffffff;
+        color: #333;
+        border-top: 1px solid #e9ecef;
+        border-bottom-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+        text-align: right;
+    }
+    
+    .close {
+        color: #888;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    /* add animation effects */
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+    
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+
+
+    
+
+    /* MEDIA QUERIES */
+   @media (max-width: 700px){
+     #display{
+       flex-direction: column-reverse;
+       align-items: center;
+     }
+
+     #options{
+       width: 100%;
+       height: 50vh;
+     }
+
+
+     #game-area{
+      width: 100%;
+      max-width: 600px;
+      height: 50%;
+      margin: 0;
+    }
+
+
+    #villian{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #villian-tray{
+      width: 70%;
+      
+    }
+
+
+   }

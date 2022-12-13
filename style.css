@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* DISPLAY IS ALL OF SCREEN EXCEPT FOR HEADER */
+#display{
+  display: flex;
+  width: 1100px;
+  height: 700px;
+  border: 2px solid salmon;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+/* Game-area includes the title (h1) the game display and the counter tray */
+#game-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+  width: 70%;
+  height: 90%;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 2rem;
+}
+
+#game-display{
+  width: 470px;
+  height: 470px;
+  border-width: 10px;
+  border-style: outset; 
+  Border-color: gold;
+  justify-content: center;
+  align-items: center;
+}
+
+#results-display{
+  width: 100%;
+  height: 25%;
+  border: 2px solid yellow;
+}
+
+#options{
+  width: 29%;
+  border: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 90%;
+}
+
+
+/* weapon includes 'choose your weapon' and the tray */
+#weapon{
+  width: 100%;
+  height: 20%;
+  border: 4px pink solid;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#weapon-tray{
+  width: 100%;
+  height: 86%;
+  border-width: 10px;
+  border-style: outset; 
+  Border-color: #CC63FF;
+  background-color: pink;
+}
+
+
+#villian{
+  width: 100%;
+  height: 75%;
+  border: 4px red solid;
+  text-align: center;
+}
+
+#villian-tray{
+  width: 100%;
+  height: 86%;
+  border-width: 10px;
+  border-style: outset; 
+  Border-color: #412b4d;
+  background-color: grey;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns:  repeat(3, 1fr);
+}
+
+.vil{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  margin-top: 2px;
+  border-style: outset; 
+  Border-color: #CC63FF;
+}
+
+.vil:hover{
+  transform: scale(1.5)
+}
+
+
+#level{
+  width: 100%;
+  height: 10%;
+  border: 4px purple solid;
+
+}
