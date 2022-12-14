@@ -255,12 +255,12 @@ function villiansBtn(){
     const optionTwoId = cardsChosenIds[1]
    
     if(optionOneId == optionTwoId){
-      cards[optionOneId].setAttribute('src', '/pics/blank.png')
-      cards[optionTwoId].setAttribute('src', '/pics/blank.png')
+      cards[optionOneId].setAttribute('src', './pics/blank.png')
+      cards[optionTwoId].setAttribute('src', './pics/blank.png')
     } else 
     if(cardsChosen[0]==cardsChosen[1]){
-      cards[optionOneId].setAttribute('src', '/pics/white.png')
-      cards[optionTwoId].setAttribute('src', '/pics/white.png')
+      cards[optionOneId].setAttribute('src', './pics/white.png')
+      cards[optionTwoId].setAttribute('src', './pics/white.png')
       cards[optionOneId].removeEventListener('click', flipCard)
       cards[optionTwoId].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
@@ -269,8 +269,8 @@ function villiansBtn(){
       capVil.innerText = villians[optionOneId].name[gorv]
       capturedVillians.appendChild(capVil);
     } else {
-      cards[optionOneId].setAttribute('src', '/pics/blank.png')
-      cards[optionTwoId].setAttribute('src', '/pics/blank.png')
+      cards[optionOneId].setAttribute('src', './pics/blank.png')
+      cards[optionTwoId].setAttribute('src', './pics/blank.png')
     }
     resultDisplay.innerHTML = cardsWon.length
    // capturedDisplay.innerHTML = captured;
