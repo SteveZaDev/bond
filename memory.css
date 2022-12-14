@@ -25,7 +25,7 @@ body{
   background-position: center center;
   opacity: .85;
   position: relative;
-  border: 2px solid green;
+  border: 2px solid gold;
 }
 
 #grid{
@@ -39,6 +39,12 @@ body{
 img{
   border: 1px solid gold;
   cursor: pointer;
+}
+
+
+#grid img{
+width: 100px;
+height: 100px;
 }
 
 h3{
@@ -78,3 +84,27 @@ button{
   min-height: 100%;
   z-index: -1;
 }
+
+#whichset-tray{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+    /* MEDIA QUERIES */
+    @media (max-width: 620px)
+    {
+      #grid{
+        width: 300px;
+        height: 250px;
+
+      }
+
+      #grid img{
+        width: 50px;
+        height: 50px;
+      }
+      
+ 
+    }

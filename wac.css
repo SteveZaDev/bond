@@ -26,7 +26,7 @@ body{
 #display{
   display: flex;
   width: 90vw;
-  height: 90vh;
+  height: 95vh;
 /*  border: 2px solid salmon; */
   margin: 10px;
   justify-content: center;
@@ -102,6 +102,13 @@ h1{
   border-style: outset; 
   Border-color: #CC63FF;
   background-color: pink;
+}
+
+
+#set-tray{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 
@@ -358,34 +365,34 @@ opacity: .90;
 
     /* MEDIA QUERIES */
    @media (max-width: 700px){
-     #display{
-       flex-direction: column-reverse;
-       align-items: center;
-     }
-
-     #options{
-       width: 100%;
-       height: 50vh;
-     }
-
-
-     #game-area{
-      width: 100%;
-      max-width: 600px;
-      height: 50%;
-      margin: 0;
-    }
-
-
-    #villian{
+    #display{
       display: flex;
-      flex-direction: column;
+      height: 200vh;
+      flex-direction: column-reverse;
       align-items: center;
     }
-    #villian-tray{
-      width: 70%;
-      
+
+    #options{
+      width: 100%;
+      height: 100vh;
     }
 
 
+    #game-area{
+     width: 100%;
+     max-width: 600px;
+     height: 100vh;
+     margin: 0;
    }
+
+
+   #villian{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   #villian-tray{
+     width: 70%;
+     
+   }
+  }
