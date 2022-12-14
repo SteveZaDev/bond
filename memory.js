@@ -266,7 +266,7 @@ function villiansBtn(){
       cardsWon.push(cardsChosen)
       captured.push(cardsChosen[0])
       let capVil = document.createElement('li');
-      capVil.innerText = villians[optionOneId].name[gorv]
+      capVil.innerText = " " + villians[optionOneId].name[gorv]
       capturedVillians.appendChild(capVil);
     } else {
       cards[optionOneId].setAttribute('src', './pics/blank.png')
