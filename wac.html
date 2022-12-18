@@ -15,8 +15,8 @@
 
   <section id="display">
    <section id="game-area">
-      <h1>Wac-a-Villian</h1>
-      <h3>Time left is <span id="timer">10</span></h3>
+      <h1>Wac-a-</h1>
+      <h3>Time left is <span id="timer"></span></h3>
       <article id="game-display">
         <div class="grid">
           <div class="square" id="1"></div>
@@ -45,11 +45,21 @@
   
       </div>-->
 
+      <div id="length">
+        <p id="chosen-length">Choose length of game..</p>
+        <div id="length-tray">
+          <button onclick="ten()">10</button>
+          <button onclick="twentyfive()">25</button>
+          <button onclick="fourtyfive()">45</button>
+        </div>
+      </div>
+
       <div id="set">
         <p id="chosen-set">Choose your set..</p>
         <div id="set-tray">
           <button onclick="girls()">Bond Girls</button>
           <button onclick="villiansBtn()">Bond Villians</button>
+          <button onclick="bondBtn()">Bond</button>
         </div>
       </div>
       
@@ -57,10 +67,9 @@
       <div id="villian">
         <p id="chosen-villian"></p>
         <div id="villian-tray">
-
         </div>
-  
       </div>
+
       <div id="level">
         <p id="chosen-difficulty">Choose your level..</p>
         <div id="difficulty-tray">
