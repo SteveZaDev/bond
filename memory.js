@@ -13,7 +13,7 @@
       movie: "From Russia With Love",
       fate: ["was shot in the chest by Tatiana Romanova",
              "helped Bond steal a Lektor decoding machine, and the pair escaped on the Orient Express train.", "is assigned by his superior M to help a young Russian girl Tatiana Romanova, who has declared her desire to defect from her job as a clerk in the Russian embassy in Istanbul with an invaluable Lektor cipher machine. "],
-      pic:  ["/pics/klebb.jpg", "/pics/tatiana.jpg", "/pics/brussia.jpg"],
+      pic:  ["./pics/klebb.jpg", "./pics/tatiana.jpg", "./pics/brussia.jpg"],
       idx: 0,       
       audio: ["./auds/klebb.m4a", "./auds/tatiana.m4a", "./auds/brussia.m4a"]
     },
