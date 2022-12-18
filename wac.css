@@ -45,7 +45,7 @@ body{
   border: 1px solid var(--coolors1);
   width: 70%;
   max-width: 600px;
-  height: 90%;
+  height: 95%;
   align-items: center;
   margin-right: 2rem;
   color: white;
@@ -82,7 +82,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90%;
+  height: 95%;
 }
 
 
@@ -121,8 +121,8 @@ h1{
 
 #villian-tray{
   width: 100%;
-  height: 86%;
-  border-width: 10px;
+  height: 93%;
+  border-width: 5px;
   border-style: outset; 
   Border-color: #4e4303;
   background-color: grey;
@@ -147,9 +147,33 @@ h1{
 }
 
 
+#length{
+  width: 100%;
+  height: 12%;
+  border: 2px var(--coolors1) solid;
+}
+
+#length-tray{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#length-tray button{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#chosen-length{
+  font-size: .9rem;
+  margin-bottom: .5rem;
+  margin-bottom: 5px;
+}
+
+
+
 #level{
   width: 100%;
-  height: 15%;
+  height: 12%;
   border: 2px var(--coolors1) solid;
 }
 
