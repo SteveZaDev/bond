@@ -284,10 +284,17 @@ function bondBtn(){
     console.log("songIdx = " + songIdx)
     soundPlayer = new Audio (songs[songIdx]);
     soundPlayer.loop = true;
-    soundPlayer.volume = 0.6;
+    soundPlayer.volume = 0.2;
     soundPlayer.currentTime = 1;
     soundPlayer.play();
   }
+
+  function playCardFlip(){
+    let flip;
+    flip = new Audio ("./auds/card.mp3");
+    flip.play();
+  }
+
 
  
 
@@ -297,6 +304,7 @@ function bondBtn(){
   let timer;
   let currentTime;
   function flipCard(){
+   // playCardFlip()
     if (noCardsFlipped){
       noCardsFlipped = false;
       console.log("Start the timer")
