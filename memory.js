@@ -268,6 +268,7 @@ function bondBtn(){
     createBoard();
   }
 
+  let soundPlayer;
 
   function clearItems(){
     villians = [];
@@ -276,9 +277,11 @@ function bondBtn(){
     gridDisplay.innerHTML = "";
     capturedVillians.innerHTML = "";
     resultDisplay.innerHTML = "0";
+    if (soundPlayer){
+    soundPlayer.pause();
+    }
   }
 
-  let soundPlayer;
   function playMusic(){
     let songIdx = Math.floor(Math.random()*songs.length);
     console.log("songIdx = " + songIdx)

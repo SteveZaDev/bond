@@ -70,7 +70,8 @@ h2{
 #villian, #memory {
   font-size: 4em;
   text-transform: uppercase;
-  color: #f2395a;
+ /* color: #f2395a;*/
+ color: silver;
   -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
           transform: skew(-5deg, -5deg) rotate(5deg);
   -webkit-transform-origin: center center;

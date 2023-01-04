@@ -108,6 +108,7 @@ button{
   
   .captured{
     left: 0;
+    top: 0;
     width: 100%;
     height: 35px;
     flex-direction: row;

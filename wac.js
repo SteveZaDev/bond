@@ -303,6 +303,8 @@ function randomSquare() {
 squares.forEach(square => {
   square.addEventListener('mousedown', () => {
     if (square.id == hitPosition){
+      const audio = new Audio ('./auds/notification.wav');
+      audio.play(); 
       result++;
 //      score.textContent = result
       hitPosition = null
@@ -358,6 +360,8 @@ function countDown(){
   currentTime--;
   timerEl.textContent = currentTime;
   if (currentTime==0){
+    const audio = new Audio ('./auds/gameover.wav');
+    audio.play(); 
     clearInterval(timer)
     clearInterval(timerId)
      if (villians[ndx].idx === villians[ndx].name.length - 1){

@@ -28,8 +28,8 @@ body{
   width: 90vw;
   height: 95vh;
 /*  border: 2px solid salmon; */
-  margin: 10px;
-  justify-content: center;
+  margin: 4px;
+  justify-content:center
 }
 
 .logo{
@@ -421,16 +421,17 @@ opacity: .90;
    }
   }
 
+     /* MAX HEIGHT */
   @media (max-height: 400px){
     #display{
       display: flex;
-      height: 90vh;
+      height: 95vh;
       align-items: center;
     }
 
     #options{
       width: 50%;
-      height: 90vh;
+      height: 96vh;
     }
 
 
@@ -451,8 +452,8 @@ opacity: .90;
 
    #villian-tray{
     width: 50%;
-    height: 83%;
-    border-width: 5px;
+    height: 96%;
+    border-width: 2px;
     border-style: outset; 
     Border-color: #4e4303;
     background-color: grey;
@@ -464,9 +465,9 @@ opacity: .90;
   
   button {
     margin: 0;
-    padding: 1px 2px;
+    padding: 1px 1px;
     font-size: .75em;
-    box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+    box-shadow: -1px 1px 0 hsl(16, 100%, 30%);
     outline: none;
   }
   
