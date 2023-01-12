@@ -162,6 +162,7 @@ let millisecs = 1000;
 let gorv = 0;
 let gameLength = 5;
 
+
 const squares = document.querySelectorAll('.square');
 const mole = document.querySelectorAll('.mole');
 let ndx=0;
