@@ -24,6 +24,7 @@ body{
 
 #display{
   border: 2px solid red;
+  border: 10px solid pink;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -156,6 +157,16 @@ body{
 #difficulty-tray{
   display: flex;
   justify-content: space-evenly;
+}
+
+
+#start{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#start:disabled{
+  display: none;
 }
 
 
@@ -334,7 +345,12 @@ body{
       }
       #game-area{
         width: 60%;
+        height: 100%;
       }
+      #options{
+        height: 100%;
+      }
+
 
 
     }
