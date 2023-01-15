@@ -39,6 +39,7 @@ body{
 img{
   border: 1px solid gold;
   cursor: pointer;
+  opacity: 1;
 }
 
 
@@ -47,7 +48,7 @@ width: 100px;
 height: 100px;
 }
 
-h1, h3{
+h1, h3, h4{
   color: white;
 }
 
