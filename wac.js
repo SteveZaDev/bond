@@ -306,6 +306,8 @@ squares.forEach(square => {
     if (square.id == hitPosition){
       const audio = new Audio ('./auds/notification.wav');
       audio.play(); 
+      // vibrate device for 300 milliseconds
+      window.navigator.vibrate(300);
       result++;
 //      score.textContent = result
       hitPosition = null

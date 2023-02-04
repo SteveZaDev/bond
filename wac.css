@@ -24,7 +24,7 @@ body{
 
 #display{
   border: 2px solid red;
-  border: 10px solid pink;
+  border: 5px solid gold;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -33,7 +33,7 @@ body{
 
 
 #game-area{
-  border: 14px solid blue;
+  border: 7px solid silver;
   height: 95vh;
 }
 
@@ -42,7 +42,7 @@ body{
   height: 90%;
   border-width: 2px;
   border-style: outset; 
-  Border-color: gold;
+  border-color: gold;
   justify-content: center;
   align-items: center;
 
@@ -341,7 +341,7 @@ body{
         height: 92vh;
         flex-direction: row;
         justify-content: space-evenly;
-        border: 10px solid pink;
+        border: 5px solid gold;
       }
       #game-area{
         width: 60%;
